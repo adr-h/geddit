@@ -1,6 +1,9 @@
 import 'package:geddit/geddit.dart';
+import 'package:geddit/src/crawler/crawler.dart';
 
-void main() {
+void main() async {
+  var a = Awesome();
 
-  print('This is the main binary');
+  var crawler = Crawler();
+  await crawler.crawl();
 }
